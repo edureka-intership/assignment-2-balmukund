@@ -1,0 +1,192 @@
+/* include,border ,padding for element sizing */
+*{
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+body{
+background-color: #fbfbfb;
+}
+
+.back-img{
+    width: 100% !important;
+    background: transparent linear-gradient(180deg, #9D0E0E00 0%, #4F0707 100%) 0% 0% no-repeat padding-box;
+    background-image: url(./images/shutterstock_348320018.png);
+    min-height: 540px;
+}
+.login,.createaccount{
+    text-decoration: none;
+    color: white;
+    opacity: 0.8;
+
+}
+.login:hover,.createaccount:hover{
+    color: white ; 
+}
+.createaccount{
+    border: 1px solid white;
+}
+.logo{
+    display: inline;
+    color: red;
+    background-color: white;
+    border-radius: 50%;
+    font-size: 70px;
+    font-weight: 600;
+}
+
+.restaurant-title{
+    color: white;
+    font-size: 36px;
+}
+
+.restaurant-input{
+    position: relative;
+    height: 40px;
+        width: 310px;
+        color: gray;
+        border: none;
+        border-radius: 0px;
+        font-size: 15px;
+        opacity: 0.7;
+        float: left;
+        padding-left: 30px;
+}
+
+.headings {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-weight: normal;
+    position: relative;
+    margin: auto;
+    font-size: 36px;
+    top: -240px;
+}
+.search-icon {
+    position: absolute !important;
+    left: 295px;
+    
+}
+
+.quicksearch {
+    position: absolute;
+    margin-left: 15px;
+    margin-top: -35px;
+}
+
+.quicksearchHeading {
+    text-align: left;
+    color: #192f60;
+    font-size: 30px;
+    font-weight: bold;
+    
+    padding-left: 35px;
+    margin-top: 40px;
+}
+
+.quicksearchSubHeading {
+    text-align: left;
+    color: gray;
+    font-size: 18px;
+    font-weight: normal;
+
+    padding-left: 35px;
+}
+
+.tileContainer {
+    height: 150px;
+    width: 350px;
+    background-color: white;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    box-shadow: 0 3px 6px gray;
+    float: left;
+}
+
+.tileComponent1 {
+    width: 45%;
+    float: left;
+}
+
+.tileComponent2 {
+    width: 50%;
+    float: left;
+    margin-top: 20px;
+}
+
+.componentHeading {
+    text-align: left;
+    color: #192f60;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.componentSubHeading {
+    text-align: left;
+    color: gray;
+    font-size: 18px;
+}
+
+.qs-block {
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.marg-bot {
+    margin-bottom: 10px;
+}
+
+.heading {
+    width: 88px;
+    height: 25px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #192f60;
+}
+
+.search-icon{
+font-weight: 600;
+}
+
+.locationDropDown{
+    height: 40px;
+        width: 245px;
+        color: gray;
+        border: none;
+        border-radius: 0px;
+        font-size: 15px;
+        opacity: 0.7;
+        margin-right: 21px;
+}
+
+@media only screen and (max-width: 600px) {
+.login,
+    .createaccount {
+        
+        visibility: hidden;
+
+    }
+
+    .locationDropDown,.restaurant-input{
+        width:310px
+
+    
+    }
+    .restaurant-input{
+        left: 8px;
+        margin-top: 10px;
+    }
+    .locationDropDown{
+        margin-top: -200px;
+    }
+}

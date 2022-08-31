@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.google.com/css?family=Poppins">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <title>Home</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <!-- If element is taking 100% width(Banner), bootstrap class container-fluid -->
+    <div class="container-fluid mx-auto back-img">
+
+    <!-- Since using bootstrap ,structure page in terms of row and column . Here there are four rwos in banner section: 1. Login/Create an account 2. logo 3.Text-find the best 4. Search bar -->
+<!-- text-end means align text to right end -->
+
+<!-- Create an account /Login section begins -->
+    <div class="row text-end pt-4 login-signup-row">
+        <!-- In one there can be twelve column . Here First div has 7 column,second div has 2 column and last div has 3 column. Only place content in correct div and others keep blank if not required-->
+        <div class="col-7 col-sm-6 col-md-6 col-lg-7"></div>
+        <div class="col-2 col-sm-2 col-lg-2 text-end">
+            <a href="#" class="login">Login</a>
+           
+        </div>
+        <div class="col-4 col-sm-4  col-md-4 col-lg-3 text-start">
+             <a href="#"class="createaccount px-2 py-2">Create an account</a>
+        </div>
+    </div>
+    <!-- Create an account /Login section Ends -->
+
+    <!-- Logo section starts -->
+  
+    <div class="row pt-4 mx-auto text-center">
+    <!-- Given col-12 as need to keep all column as blank and will center align using text-center(above) -->
+    <div class="col-12">
+        <p class="px-4 py-3 logo">e!</p>
+    </div>
+
+</div>
+  <!-- Logo section ends -->
+
+<!-- Banner text  begins -->
+    <div class="row pt-4 text-center">
+        <div class="col-12">
+            <p class="restaurant-title">Find the best restaurants, cafés, and bars</p>
+        </div>
+    </div>
+<!-- Banner text  ends -->
+     
+<!-- Search bar begins-->
+     <div class="row pt-4 mx-auto text-center search-bar-row">
+        <div class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2"></div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3">
+            <div class="locationSelector">
+                <select class="locationDropDown">
+                    <option value="0" selected disabled>Select</option>
+                <option value="1">Mumbai</option>
+                <option value="1">Chennai</option>
+                <option value="1">Bangalore</option>
+                <option value="1">Rajasthan</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-5 col-xl-5">
+            <div class="restaurantSelector">
+                <input class="restaurant-input" type="text" placeholder="Search for restaurants">
+                <span class="search-icon col-12 col-sm-12 col-md-6 col-lg-5 col-xl-5 my-md-2 my-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+</svg>
+</span>
+
+            </div>
+        </div>
+        <div class="col-2 col-sm-12 col-md-1 lg-2 col-xl-2"></div>
+
+     </div>
+
+    </div>
+
+     <!-- Adding Heading -->
+    <div class="quicksearch">
+        <p class="quicksearchHeading">
+            Quick Searches
+        </p>
+        <p class="quicksearchSubHeading">
+            Discover restaurants by type of meal
+        </p>
+        <!-- Creating CSS Grid - Rows & Columns -->
+        <!-- Creating CSS Responsive Conatiner -->
+        <div class="container-fluid">
+            <!-- Adding Row -->
+            <div class="row">
+                <!-- Adding Items in Column -->
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="tileContainer">
+                        <div class="tileComponent1">
+                            <img src="./images/shutterstock_1154073754.png" height=150 width=140 />
+                        </div>
+                        <div class="tileComponent2">
+                            <div class="componentHeading">
+                                Breakfast
+                            </div>
+                            <div class="componentSubHeading">
+                                Start your day with exclusive breakfast.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Adding Items in Column -->
+                <div class="col-sm-12 col-md-12 col-lg-4">
+                    <div class="tileContainer">
+                        <div class="tileComponent1">
+                            <img src="./Images/shutterstock_1130181932.png" height="150" width="140" />
+                        </div>
+                        <div class="tileComponent2">
+                            <div class="componentHeading">
+                                Lunch
+                            </div>
+                            <div class="componentSubHeading">
+                                Start your day with exclusive lunch.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Adding Items in Column -->
+                <div class="col-sm-12 col-md-12 col-lg-4">
+                    <div class="tileContainer">
+                        <div class="tileComponent1">
+                            <img src="./Images/shutterstock_351721442.png" height="150" width="140" />
+                        </div>
+                        <div class="tileComponent2">
+                            <div class="componentHeading">
+                                Snacks
+                            </div>
+                            <div class="componentSubHeading">
+                                Start your day with exclusive snacks.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Adding Row -->
+            <div class="row">
+                <!-- Adding Items in Column -->
+                <div class="col-sm-12 col-md-12 col-lg-4">
+                    <div class="tileContainer">
+                        <div class="tileComponent1">
+                            <img src="./Images/shutterstock_476864884.png" height="150" width="140" />
+                        </div>
+                        <div class="tileComponent2">
+                            <div class="componentHeading">
+                                Dinner
+                            </div>
+                            <div class="componentSubHeading">
+                                Start your day with exclusive dinner.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Adding Items in Column -->
+                <div class="col-sm-12 col-md-12 col-lg-4">
+                    <div class="tileContainer">
+                        <div class="tileComponent1">
+                            <img src="./Images/shutterstock_305270834.png" height="150" width="140" />
+                        </div>
+                        <div class="tileComponent2">
+                            <div class="componentHeading">
+                                Drinks
+                            </div>
+                            <div class="componentSubHeading">
+                                Start your day with exclusive drinks.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Adding Items in Column -->
+                <div class="col-sm-12 col-md-12 col-lg-4">
+                    <div class="tileContainer">
+                        <div class="tileComponent1">
+                            <img src="./Images/shutterstock_1304064250.png" height="150" width="140" />
+                        </div>
+                        <div class="tileComponent2">
+                            <div class="componentHeading">
+                                NightLife
+                            </div>
+                            <div class="componentSubHeading">
+                                Start your day with exclusive nightlife.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
